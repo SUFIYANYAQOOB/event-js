@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        .main {
+          display: flex;
+          align-items: center;
+          margin-top: 100px;
+}
+
+        .box1{
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            background-color: darkcyan;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-left: 250px;  
+        }
+        
+    </style>
+    <h1>EVENT Assignment:</h1>
+
+    <div class="main">
+      <div class="box1" onmouseover="document.querySelector('.box1').style.background = 'red'"
+      onmouseout="document.querySelector('.box1').style.background = 'darkcyan'"></div>
+      <div class="box" onmouseover="document.querySelector('.box').textContent = 'lorem ipsum dolor sit amet consectetur adipisicing elit. Minus'"
+      onmouseout="document.querySelector('.box').textContent = 'lorem'">lorem</div>
+    </div>
+
+</body>
+</html>
